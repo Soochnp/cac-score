@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>TasknTrade CAC Benchmark Calculator</title>
+</head>
+<body>
+  <h1>Hello TasknTrade CAC Score</h1>
+  <p>This is a minimal deployment. Assets should be accessible under /cac-score/</p>
+  <img src="/cac-score/tntlogo.png" alt="TasknTrade Logo" style="height:80px"/>
+  <script>
+    fetch('/cac-score/benchmarks.json').then(r => r.json()).then(j => {
+      document.body.insertAdjacentHTML('beforeend', '<pre>'+JSON.stringify(j,null,2)+'</pre>');
+    });
+  </script>
+</body>
+</html>

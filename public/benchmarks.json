@@ -1,0 +1,46 @@
+{
+  "version": "2025-09-04",
+  "industries": {
+    "Beauty": {
+      "cacRange": {
+        "min": 60,
+        "max": 120
+      },
+      "ltvRange": {
+        "min": 180,
+        "max": 450
+      },
+      "ltvCacTarget": 3.0
+    },
+    "F&B": {
+      "cacRange": {
+        "min": 40,
+        "max": 100
+      },
+      "ltvRange": {
+        "min": 120,
+        "max": 360
+      },
+      "ltvCacTarget": 3.0
+    },
+    "Apparel": {
+      "cacRange": {
+        "min": 50,
+        "max": 110
+      },
+      "ltvRange": {
+        "min": 150,
+        "max": 400
+      },
+      "ltvCacTarget": 3.0
+    },
+    "SaaS": {
+      "paybackMonths": {
+        "typicalLow": 10,
+        "typicalHigh": 20,
+        "bestInClass": 12
+      },
+      "ltvCacTarget": 3.0
+    }
+  }
+}
